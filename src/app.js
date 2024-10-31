@@ -12,8 +12,7 @@ window.onload = () => {
   let randomCardNumber = Math.floor(Math.random() * cardNumber.length);
   let randomCardSuit = Math.floor(Math.random() * cardSuit.length);
   document.querySelector("#card").innerHTML = `${cardNumber[randomCardNumber]}`;
-  // document.querySelectorAll(".suit");
-
+ 
   const suits = document.querySelectorAll(".suit");
   for (let i = 0; i < suits.length; i++) {
     suits[i].classList.add(cardSuit[randomCardSuit]);
