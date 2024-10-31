@@ -1,1 +1,48 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+}
+.card-container {
+  display: flex;
+  justify-self: center;
+  height: 400px;
+  width: 300px;
+  margin-top: 200px;
+  border-radius: 8px;
+  background-color: whitesmoke;
+
+  box-shadow: 5px 5px #4d4d4d80;
+}
+.card-suit-container-upright {
+  font-size: 70px;
+}
+
+.card-suit-container-downward {
+  font-size: 70px;
+  transform: rotate(3.142rad);
+}
+
+.suit.spades:after {
+  content: "♠️";
+}
+.suit.hearts:after {
+  content: "♥️";
+  color: red;
+}
+.suit.clubs:after {
+  content: "♣️";
+}
+.suit.diamonds:after {
+  content: "♦️";
+  color: red;
+}
+
+.card-number-container {
+  font-size: 150px;
+  justify-self: center;
+  margin-top: 80px;
+}
+button {
+  margin-top: 50px;
+}
